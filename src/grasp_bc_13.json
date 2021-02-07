@@ -1,0 +1,53 @@
+{
+	"config":
+	{    
+		"numEpochs": 1000,
+		"N": 4,
+		"visdom": 0,
+		"trainFolderDir": "dataset/data/training/grasp_0526_long/",
+		"testFolderDir": "dataset/data/training/grasp_0526_long/",
+		"obj_folder": "dataset/processed_objects/SNC_v4_mug/",
+		"num_cpus": 10,
+		"actionDim": 5,
+		"checkContact": 1,
+		"checkPalmContact": 1,
+		"numTest": 200,
+		"numTrainTrials": 300,
+		"numTestTrials": 24,
+		"useLongFinger": 1
+	},
+	"ent":
+	{
+		"z_conv_dim": 2,
+		"z_mlp_dim": 8,
+		"encoder_out_cnn_dim": 40,
+		"actor_out_cnn_dim": 40
+	},
+	"loss":
+	{
+		"kl_anneal_wait": 20,
+		"kl_anneal_period": 5,
+		"trans_l2_loss_ratio": 0.1,
+		"rot_l2_loss_ratio": 0.1,
+		"kl_loss_ratio": 1e-1,
+		"gradientClip":
+		{
+			"use": 1,
+			"thres": 5
+		}
+	},
+	"optim":
+	{
+		"type": "AdamW",
+		"actor_lr": 1e-3,
+		"actor_weight_decay": 1e-5,
+		"encoder_lr": 1e-3,
+		"encoder_weight_decay": 1e-5,
+		"decayLR":
+		{
+			"use": 0,
+			"milestones": [300, 600, 900],
+			"gamma": 0.5
+		}
+	}    
+}
