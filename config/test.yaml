@@ -1,0 +1,9 @@
+RESNET:
+  FIXED_BLOCKS: 2
+
+DATASETS:
+  VGGFACE2:
+    HOME: ""
+  CUSTOM:
+    HOME: "/data/Yantian/affordance_IL/affordance_grasp"
+

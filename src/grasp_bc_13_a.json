@@ -1,0 +1,57 @@
+{
+	"config":
+	{    
+		"numEpochs": 1000,
+		"N": 5,
+		"visdom": 0,
+		"wandb": 0,
+		"trainFolderDir": "/data/Yantian/affordance_IL/affordance_grasp/",
+		"testFolderDir": "/data/Yantian/affordance_IL/affordance_grasp/",
+		"obj_folder": "/data/Yantian/affordance_IL/processed_objects/SNC_v4_mug/",
+		"num_cpus": 25,
+		"stateDim": 8,
+		"actionDim": 7,
+		"checkContact": 1,
+		"checkPalmContact": 1,
+		"numTest": 200,
+		"numTrainTrials": 300,
+		"numTestTrials": 24,
+		"useLongFinger": 1
+	},
+	"ent":
+	{
+		"z_conv_dim": 2,
+		"z_mlp_dim": 32,
+		"encoder_out_cnn_dim": 128,
+		"actor_out_cnn_dim": 64
+	},
+	"loss":
+	{
+		"kl_anneal_wait": 20,
+		"kl_anneal_period": 5,
+		"trans_l2_loss_ratio": 0.1,
+		"rot_l2_loss_ratio": 0.1,
+		"kl_loss_ratio": 1e-1,
+		"triplet_loss_ratio": 1,
+		"gradientClip":
+		{
+			"use": 1,
+			"thres": 5
+		}
+	},
+	"optim":
+	{
+		"type": "AdamW",
+		"tripleLoss_margin": 1.0,
+		"actor_lr": 1e-3,
+		"actor_weight_decay": 1e-5,
+		"encoder_lr": 1e-3,
+		"encoder_weight_decay": 1e-5,
+		"decayLR":
+		{
+			"use": 0,
+			"milestones": [300, 600, 900],
+			"gamma": 0.5
+		}
+	}    
+}
