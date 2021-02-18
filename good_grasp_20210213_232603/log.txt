@@ -1,0 +1,155 @@
+Saving state_0.bullet
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.30000001192092896, 3.205773424497238e-09, 0.4000000059604645), (1.5707963267948966, 1.415724279839569, 1.5707963267948966)]
+Taking state_0.bullet
+AA:  [ 1.26315773e-01 -3.20577342e-09  0.00000000e+00  1.62920680e-07
+ -2.34323116e-09  1.20256587e-01  0.00000000e+00]
+BB:  [ 1.26315773e-01 -3.20577342e-09  0.00000000e+00  1.62920680e-07
+ -2.34323116e-09  1.20256587e-01  0.00000000e+00]
+action  [ 1.26315773e-01 -3.20577342e-09  0.00000000e+00  1.62920680e-07
+ -2.34323116e-09  1.20256587e-01  0.00000000e+00]
+OrderedDict([('ee', array([ 4.26225334e-01, -2.73216356e-05,  4.00004596e-01,  1.61908337e+00,
+        1.45198714e+00,  1.76752576e+00])), ('mug', array([ 6.49999987e-01, -3.99999827e-02,  3.30466157e-01, -6.29114432e-06,
+        3.37083543e-06,  8.00000086e-01])), ('fingers', [0.03999937556247364, 0.04000000015089436])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_1.bullet
+epi and step:  0 1 [ 1.26315773e-01 -3.20577342e-09  0.00000000e+00  1.62920680e-07
+ -2.34323116e-09  1.20256587e-01  0.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.42622533440589905, -2.7321635570842773e-05, 0.4000045955181122), (1.6190833690651945, 1.4519871422945334, 1.7675257592363676)]
+Taking state_1.bullet
+AA:  [ 7.98520446e-03 -1.04989778e-02  0.00000000e+00  3.54758212e-08
+  1.24245994e-07  5.61584563e-02  0.00000000e+00]
+BB:  [ 7.98520446e-03 -1.04989778e-02  0.00000000e+00  3.54758212e-08
+  1.24245994e-07  5.61584563e-02  0.00000000e+00]
+action  [ 7.98520446e-03 -1.04989778e-02  0.00000000e+00  3.54758212e-08
+  1.24245994e-07  5.61584563e-02  0.00000000e+00]
+OrderedDict([('ee', array([ 0.43421328, -0.01051465,  0.40000463,  1.61907375,  1.45197789,
+        1.8237157 ])), ('mug', array([ 6.49999991e-01, -3.99999892e-02,  3.30466095e-01, -2.75848379e-06,
+        2.34393420e-06,  8.00000080e-01])), ('fingers', [0.039999735050933106, 0.04000000078497815])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_2.bullet
+epi and step:  0 2 [ 7.98520446e-03 -1.04989778e-02  0.00000000e+00  3.54758212e-08
+  1.24245994e-07  5.61584563e-02  0.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.4342132806777954, -0.01051465142518282, 0.40000462532043457), (1.6190737483193605, 1.4519778944682475, 1.8237156973122608)]
+Taking state_2.bullet
+AA:  [ 3.15761864e-02 -1.05380071e-02 -1.86888576e-02  1.19478491e-07
+ -1.64670884e-07  6.62846460e-02  0.00000000e+00]
+BB:  [ 3.15761864e-02 -1.05380071e-02 -1.86888576e-02  1.19478491e-07
+ -1.64670884e-07  6.62846460e-02  0.00000000e+00]
+action  [ 3.15761864e-02 -1.05380071e-02 -1.86888576e-02  1.19478491e-07
+ -1.64670884e-07  6.62846460e-02  0.00000000e+00]
+OrderedDict([('ee', array([ 0.46576673, -0.02104317,  0.38132957,  1.61907188,  1.45197844,
+        1.89001885])), ('mug', array([ 6.49999993e-01, -3.99999973e-02,  3.30466032e-01,  3.25181791e-06,
+       -4.22083773e-07,  7.99999985e-01])), ('fingers', [0.039999989747227654, 0.040000003464796235])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_3.bullet
+epi and step:  0 3 [ 3.15761864e-02 -1.05380071e-02 -1.86888576e-02  1.19478491e-07
+ -1.64670884e-07  6.62846460e-02  0.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.4657667279243469, -0.021043168380856514, 0.38132956624031067), (1.6190718812170608, 1.45197844203377, 1.8900188540962823)]
+Taking state_3.bullet
+AA:  [ 1.58122182e-02 -1.30385160e-08 -2.98023224e-08  7.92321579e-08
+ -2.35399249e-07  6.62971402e-02  0.00000000e+00]
+BB:  [ 1.58122182e-02 -1.30385160e-08 -2.98023224e-08  7.92321579e-08
+ -2.35399249e-07  6.62971402e-02  0.00000000e+00]
+action  [ 1.58122182e-02 -1.30385160e-08 -2.98023224e-08  7.92321579e-08
+ -2.35399249e-07  6.62971402e-02  0.00000000e+00]
+OrderedDict([('ee', array([ 0.48156971, -0.02103728,  0.38132828,  1.61905236,  1.45194745,
+        1.95633882])), ('mug', array([ 6.49999997e-01, -4.00000125e-02,  3.30465794e-01,  1.07289452e-05,
+       -4.46741845e-06,  7.99999968e-01])), ('fingers', [0.03999999747393974, 0.04000000137853094])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_4.bullet
+epi and step:  0 4 [ 1.58122182e-02 -1.30385160e-08 -2.98023224e-08  7.92321579e-08
+ -2.35399249e-07  6.62971402e-02  0.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.48156970739364624, -0.021037284284830093, 0.381328284740448), (1.6190523567263202, 1.4519474461490853, 1.9563388194970632)]
+Taking state_4.bullet
+AA:  [1.57986879e-02 3.72529030e-09 0.00000000e+00 5.33994122e-08
+ 2.42907311e-07 6.62928257e-02 0.00000000e+00]
+BB:  [1.57986879e-02 3.72529030e-09 0.00000000e+00 5.33994122e-08
+ 2.42907311e-07 6.62928257e-02 0.00000000e+00]
+action  [1.57986879e-02 3.72529030e-09 0.00000000e+00 5.33994122e-08
+ 2.42907311e-07 6.62928257e-02 0.00000000e+00]
+OrderedDict([('ee', array([ 0.49735808, -0.02102991,  0.38132831,  1.61905829,  1.451957  ,
+        2.02270007])), ('mug', array([ 6.51227445e-01, -3.90161274e-02,  3.30465706e-01,  1.34545398e-05,
+       -4.23455692e-06,  7.98140826e-01])), ('fingers', [0.039999732346670334, 0.039998976361902666])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_5.bullet
+epi and step:  0 5 [1.57986879e-02 3.72529030e-09 0.00000000e+00 5.33994122e-08
+ 2.42907311e-07 6.62928257e-02 0.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.4973580837249756, -0.02102990821003914, 0.3813283145427704), (1.6190582876822492, 1.4519570021105144, 2.022700072828213)]
+Taking state_5.bullet
+AA:  [ 0.00000000e+00  1.86264515e-08  0.00000000e+00 -1.55510618e-07
+  2.23689046e-07 -2.39911953e-07  1.00000000e+00]
+BB:  [ 0.00000000e+00  1.86264515e-08  0.00000000e+00 -1.55510618e-07
+  2.23689046e-07 -2.39911953e-07  1.00000000e+00]
+action  [ 0.00000000e+00  1.86264515e-08  0.00000000e+00 -1.55510618e-07
+  2.23689046e-07 -2.39911953e-07  1.00000000e+00]
+OrderedDict([('ee', array([ 0.49736667, -0.02101168,  0.38134295,  1.61471723,  1.45281051,
+        2.01895163])), ('mug', array([ 0.64084716, -0.01560903,  0.33075733, -0.00866997, -0.0089528 ,
+        0.79153947])), ('fingers', [0.005797873592160209, 0.01040035167462323])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_6.bullet
+epi and step:  0 6 [ 0.00000000e+00  1.86264515e-08  0.00000000e+00 -1.55510618e-07
+  2.23689046e-07 -2.39911953e-07  1.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.49736666679382324, -0.021011678501963615, 0.38134294748306274), (1.614717227444929, 1.4528105071534605, 2.0189516342505565)]
+Taking state_6.bullet
+AA:  [ 0.00000000e+00  2.79396772e-08  2.41833627e-02 -2.20761579e-07
+  2.57159284e-07  2.58602227e-07  1.00000000e+00]
+BB:  [ 0.00000000e+00  2.79396772e-08  2.41833627e-02 -2.20761579e-07
+  2.57159284e-07  2.58602227e-07  1.00000000e+00]
+action  [ 0.00000000e+00  2.79396772e-08  2.41833627e-02 -2.20761579e-07
+  2.57159284e-07  2.58602227e-07  1.00000000e+00]
+OrderedDict([('ee', array([ 0.49737269, -0.02099344,  0.40552044,  1.61059655,  1.45268956,
+        2.01535835])), ('mug', array([ 0.642265  , -0.01323363,  0.35373845,  0.00517139,  0.01260842,
+        0.86614088])), ('fingers', [0.006068914413116055, 0.01033174874145043])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_7.bullet
+epi and step:  0 7 [ 0.00000000e+00  2.79396772e-08  2.41833627e-02 -2.20761579e-07
+  2.57159284e-07  2.58602227e-07  1.00000000e+00] False 0
+Please use mouse to set up a proper target pose of end effector:
+SSAA:  [(0.49737268686294556, -0.020993441343307495, 0.4055204391479492), (1.6105965493322734, 1.4526895580186443, 2.0153583544599596)]
+Taking state_7.bullet
+AA:  [ 0.00000000e+00 -2.98023224e-08  6.05321825e-02  1.07467043e-07
+  8.96559162e-08  9.35686049e-08  1.00000000e+00]
+BB:  [ 0.00000000e+00 -2.98023224e-08  6.05321825e-02  1.07467043e-07
+  8.96559162e-08  9.35686049e-08  1.00000000e+00]
+action  [ 0.00000000e+00 -2.98023224e-08  6.05321825e-02  1.07467043e-07
+  8.96559162e-08  9.35686049e-08  1.00000000e+00]
+OrderedDict([('ee', array([ 0.49737981, -0.02097386,  0.46602249,  1.60604587,  1.45252113,
+        2.01136401])), ('mug', array([ 0.64052531, -0.01418022,  0.41399989,  0.0103323 ,  0.04466281,
+        0.87851054])), ('fingers', [0.006017651378793588, 0.01032839334058244])])
+Press Enter if you are happy with the next state, otherwise Press # steps that you want to go back (1, 2, or ... 10) and then Enter to repeat
+
+Saving state_8.bullet
+epi and step:  0 8 [ 0.00000000e+00 -2.98023224e-08  6.05321825e-02  1.07467043e-07
+  8.96559162e-08  9.35686049e-08  1.00000000e+00] True 10
+/home/yz/.local/lib/python3.6/site-packages/numpy/core/_asarray.py:136: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order, subok=True)
+UUU 8
+YYY /data/datasets/SERL/Fetch/Grasp-v0/grasp_20210213_232603/traj_0_grasp_20210213_232603.pickle
+Lossy conversion from float64 to uint8. Range [0.0, 255.00000000000006]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-1.1190646933417758e-14, 254.99999999999997]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 255.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 255.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-2.452827844263636e-14, 254.99999999999997]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 255.00000000000006]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 255.00000000000003]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 255.0]. Convert image to uint8 prior to saving to suppress this warning.
+Trial 1 done
+
+
+ Number of trials collected: 1
+
+
