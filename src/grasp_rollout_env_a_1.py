@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import ray
 import itertools
 from src.utils_depth import *
-from src.nn_grasp import PolicyNet
+from src.nn_grasp_siamese_full import PolicyNet
 from src.panda_env import pandaEnv
 from src.utils_geom import quatMult, euler2quat, quat2euler
 

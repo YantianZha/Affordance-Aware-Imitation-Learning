@@ -36,7 +36,12 @@ Please download [here](https://drive.google.com/drive/folders/11Tde7DxHVYrnt43tz
 
 ### FAQ
 1. Where is the implementation of coupled triplet loss?
-2. What are the mugs used and how they are different from each other?
+   
+   Please check [this line](https://github.com/YantianZha/Affordance-Aware-Imitation-Learning/blob/b2a48077970f75bfbab98d31d10afd425a962581/trainGrasp_full.py#L322).
+2. What are the mugs used and how they are different from each other? 
+   
+   Please check [this line]().   
+   
 3. Why the visualization images in trajectory folders are different in brightnesses?
 
 ### Acknowledgement
