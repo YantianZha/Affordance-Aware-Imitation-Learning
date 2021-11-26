@@ -13,7 +13,7 @@
 		"actionDim": 7,
 		"checkContact": 1,
 		"checkPalmContact": 1,
-		"numTest": 200,
+		"numTest": 20,
 		"numTrainTrials": 300,
 		"numTestTrials": 24,
 		"useLongFinger": 1

@@ -1,3 +1,4 @@
+import os
 import sys
 import time
 from collections import OrderedDict
@@ -115,7 +116,7 @@ class GraspRolloutEnv():
 		else:
 			p.connect(p.DIRECT)
 
-		zs = zs.reshape(1, -1)
+		objId = os.path.splitext(os.path.basename(objPath))[0]
 
 		######################### Reset #######################
 		self.reset()
@@ -225,10 +226,10 @@ class GraspRolloutEnv():
 				# Close instance and return result
 				p.disconnect()
 				if success:
-					figs = datetime.now().strftime("%Y%m%d-%H%M%S")
+					figs = datetime.now().strftime("_%Y%m%d-%H%M%S")
 					for i, im in enumerate(list(zip(all_imgs, all_affords))):
-						cv2.imwrite(figure_path + figs + '_depth_' + str(i) + '.png', im[0])
-						cv2.imwrite(figure_path + figs + '_affordance_' + str(i) + '.png', im[1])
+						cv2.imwrite(figure_path + figs + '_obj_' + objId + '_depth_' + str(i) + '.png', im[0])
+						cv2.imwrite(figure_path + figs + '_obj_' + objId + '_affordance_' + str(i) + '.png', im[1])
 					return 1
 				else:
 					return 0
