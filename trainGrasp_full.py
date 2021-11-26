@@ -319,9 +319,9 @@ class TrainGrasp_BC:
 			target_2 = target_2.to(self.device)
 			target_2 = Variable(target_2)
 
+			# The following 3 lines forms a Coupled Triplet Loss (the Equation 4 in our paper)
 			triplet_loss_1 = self.tripleCriterion(dist_A1_A2, dist_A1_A3, target_1)
 			triplet_loss_2 = self.tripleCriterion(dist_E1_A2, dist_E1_A3, target_2)
-
 			triplet_loss = torch.div((triplet_loss_1 + triplet_loss_2), 2)
 
 			# torch.onnx.export(self.actor, args=(A1[:-1], z_skill_1[:-1], anchor_trial[1][:-1]), f="actor.onnx", verbose=True,
@@ -345,6 +345,7 @@ class TrainGrasp_BC:
 		trans_l1_loss_total /= self.N
 		trans_l2_loss_total /= self.N
 
+		# I found using the following instead of X_loss_total gives more meaningful affordance cues
 		return triplet_loss, trans_l2_loss, trans_l1_loss
 
 

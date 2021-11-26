@@ -64,10 +64,9 @@ class GraspRolloutEnv():
 		self.projMat = p.computeProjectionMatrixFOV(
 			fov, aspect, near, far)
 
-
 		# Object ID in PyBullet
 		self._objId = None
-  
+
 		# Number of cpus for Ray, no constraint if set to zero
 		self.num_cpus = num_cpus
 
@@ -177,38 +176,20 @@ class GraspRolloutEnv():
 			# Get skill_z
 			zs, featAff, hidden_cell = self.encoder(inputs, 0, 0, train=False, prev_hidden_cell_lstm=hidden_cell)
 
-			# if save_figure:
 			afford_map = featAff[0,-1,:,:].detach().numpy()
-# 			afford_map = np.array([
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99919313,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,1.00000000,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705],
-#     [0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705,0.99782705]
-# ])
 
 			afford_map = cv2.resize(afford_map, (512, 512))
 			afford_map = cv2.normalize(afford_map, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
-			# print(afford_map.shape)
-			# depth_np = np.moveaxis(depth_np, 0, -1)
+
 			depth_np_map = cv2.normalize(ori_img, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
-			# depth_np_map = np.expand_dims(depth_np_map, -1)
-			# print(depth_np_map.shape)
 			afford_map = cv2.applyColorMap(afford_map, cv2.COLORMAP_JET)
 			# print(afford_map.shape)
 
 			depth_np_map = np.stack((depth_np_map,) * 3, axis=-1)
-			# print(depth_np_map.shape)
 
 			# merge map and frame
 			fin = cv2.addWeighted(afford_map, 0.5, depth_np_map, 0.5, 0)
 			all_affords.append(fin)
-			# cv2.imwrite(figure_path + str(step) + '.png', fin)
-
 
 			# Infer action
 			action = self.actor(featAff, zs, state)#.squeeze(0).detach().numpy()
@@ -268,7 +249,7 @@ class GraspRolloutEnv():
 			return (True, False)
 
 		# If the mug is not hold up above 0.05m, return false to continue
-		if self.simple_states['mug'][2] <= self._obj_config[0][2] + 0.05:  # 0.65:
+		if self.simple_states['mug'][2] <= self._obj_config[0][2] + 0.05:
 			return (False, False)
 
 		print("Success! ", self._obj_config[0][2])
@@ -288,15 +269,12 @@ class GraspRolloutEnv():
 			Numpy array containing location and orientation of nearest block and
 			location of end-effector.
 		"""
-		# _ = self._get_image_observation()
 		self.simple_states = OrderedDict()
-		# self.simple_states['locs'] = np.array(self.Locs)
 
 		states = []
 		state = p.getLinkState(
 			self.env._pandaId, self.env._panda.pandaEndEffectorLinkIndex)
-		# end_effector_pos = np.array(state[0])
-		# end_effector_ori = pybullet.getEulerFromQuaternion(np.array(state[1]))
+
 		end_effector_pos = np.array(state[4])
 		end_effector_ori = p.getEulerFromQuaternion(np.array(state[5]))
 		states.extend(np.concatenate((end_effector_pos, end_effector_ori)))
@@ -307,9 +285,7 @@ class GraspRolloutEnv():
 		pos, ori = np.array(pos), np.array(ori)
 		self.simple_states['mug'] = np.concatenate((pos, ori))
 
-		# self.simple_states['fingers'] = np.array([p.getJointState(self.pandaEnv._panda.pandaRightFingerJointIndex), p.getJointState(self.pandaEnv._panda.pandaLeftFingerJointIndex)])
-
 		self.simple_states['fingers'] = p.getJointStates(self.env._panda.pandaId,
-																										 [self.env._panda.pandaLeftFingerJointIndex,
-																											self.env._panda.pandaRightFingerJointIndex])
+														 [self.env._panda.pandaLeftFingerJointIndex,
+														  self.env._panda.pandaRightFingerJointIndex])
 		self.simple_states['fingers'] = [s[0] for s in self.simple_states['fingers']]
