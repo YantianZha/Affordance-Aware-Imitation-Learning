@@ -43,11 +43,14 @@ Please download [here](https://drive.google.com/drive/folders/11Tde7DxHVYrnt43tz
 1. Where is the implementation of coupled triplet loss?
    
    Please check [this line](https://github.com/YantianZha/Affordance-Aware-Imitation-Learning/blob/b2a48077970f75bfbab98d31d10afd425a962581/trainGrasp_full.py#L322).
+
 2. What are the mugs used and how they are different from each other? 
    
    Please check [this line](https://github.com/YantianZha/Affordance-Aware-Imitation-Learning/blob/b650ae568355be59515f3a1555faba9e586f0098/trainGrasp_full.py#L194), which lists three sets of mug model indices that we used for the three affordance categories: body-graspable, handle-left-right-sides-graspable, and handle-front-back-sides-graspable. Note that we consider a challenging case that the three sets of mug indices can be overlapping.   
    
-3. Why the visualization images in trajectory folders are different in brightnesses?
+3. Why the visualization images of observations in demonstration trajectory folders sometimes are different in brightnesses?
+
+   We added a grayscale normalization at the part of codes for visualizing recorded demonstrations during the procedure of collecting those trajectories. Since we only changed the visualization part, the trajectory data is ok to use.
 
 ### Acknowledgement
-The code is based on [this repo](https://github.com/irom-lab/PAC-Imitation).
+The first author sincerely appreciates the permission of using some codes from [this repo](https://github.com/irom-lab/PAC-Imitation).
