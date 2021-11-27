@@ -1,14 +1,11 @@
 import pybullet_data
+import os
 import pybullet as p
-import time
-import numpy as np
-
 from src.utils_geom import *
 from src.utils_depth import *
 from src.panda import Panda
 
-local_env_data_path = '/home/yzha3/Research/kair_algorithms_draft/scripts/envs/'
-
+local_env_data_path = os.getcwd() + '/envs/'
 
 def accurateIK(bodyId, endEffectorId, targetPosition, targetOrientation, lowerLimits, upperLimits, jointRanges, restPoses, useNullSpace=False, maxIter=10, threshold=1e-4):
   """
