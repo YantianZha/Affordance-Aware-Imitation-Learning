@@ -192,8 +192,8 @@ class TrainGrasp_BC:
 		self.seen_obj_ind_list = [28, 2035, 2041, 2348, 2530, 2583, 2087, 2901, 180, 2445, 2037, 2041, 2044, 2141, 2559, 2583, 2077, 2059, 2032, 2050, 2530, 2583, 2035, 2036] #np.arange(1000,1000+60)
 		self.unseen_obj_ind_list = [28, 2035, 2041, 2348, 2530, 2583, 2087, 2901, 180, 2445, 2037, 2041, 2044, 2141, 2559, 2583, 2077, 2059, 2032, 2050, 2530, 2583, 2035, 2036]#np.arange(1000-20,1000)
 		# Body-graspable mug IDs: [28, 2035, 2041, 2348, 2530, 2583, 2087, 2901]
-		# Left_right_handle_sides-graspable mug IDs: [28, 180, 2445, 2037, 2041, 2044, 2141, 2559, 2583, 2077]
-		# Front_back_handle_sides-graspable mug IDs: [28, 2059, 2032, 2050, 2530, 2583, 2087, 2035, 2036, 2077]
+		# Handle_left_right_sides-graspable mug IDs: [28, 180, 2445, 2037, 2041, 2044, 2141, 2559, 2583, 2077]
+		# Handle_front_back_sides-graspable mug IDs: [28, 2059, 2032, 2050, 2530, 2583, 2087, 2035, 2036, 2077]
 
 		train_triplets = []
 		test_triplets = []

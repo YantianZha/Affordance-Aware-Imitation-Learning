@@ -23,8 +23,13 @@ This repository includes codes for reproducing the experiments (Table. 1) in the
 
 ### Dependencies (`pip install` with python=3.6 or 3.7):
 1. pybullet
-2. PyTorch
+2. PyTorch (make sure that the torch version matches your cuda version; otherwise, you may still be able to install pytorch but the learning performance could be abnormal)
 3. ray
+4. opencv-python==4.5.2.52 (similar versions around 4.5 may also be fine)
+5. easydict
+6. matplotlib
+7. wandb (removable dependency)
+8. visdom (removable dependency)
 
 ### Dataset and Mug Models:
 Please download [here](https://drive.google.com/drive/folders/11Tde7DxHVYrnt43tzGM6uyxSDaKRh4NY?usp=sharing). Change the path correspondingly in the file "src/grasp_bc_13_a.json"
@@ -40,7 +45,7 @@ Please download [here](https://drive.google.com/drive/folders/11Tde7DxHVYrnt43tz
    Please check [this line](https://github.com/YantianZha/Affordance-Aware-Imitation-Learning/blob/b2a48077970f75bfbab98d31d10afd425a962581/trainGrasp_full.py#L322).
 2. What are the mugs used and how they are different from each other? 
    
-   Please check [this line]().   
+   Please check [this line](https://github.com/YantianZha/Affordance-Aware-Imitation-Learning/blob/b650ae568355be59515f3a1555faba9e586f0098/trainGrasp_full.py#L194), which lists three sets of mug model indices that we used for the three affordance categories: body-graspable, handle-left-right-sides-graspable, and handle-front-back-sides-graspable. Note that we consider a challenging case that the three sets of mug indices can be overlapping.   
    
 3. Why the visualization images in trajectory folders are different in brightnesses?
 
