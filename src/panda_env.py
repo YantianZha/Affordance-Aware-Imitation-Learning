@@ -118,11 +118,11 @@ class pandaEnv():
 		self._planeId = p.loadURDF(self._urdfRoot+'/plane.urdf', basePosition=[0, 0, -1], useFixedBase=1)
 		self._tableId = p.loadURDF(self._urdfRoot+'/table/table.urdf', basePosition=[0.4000000, 0.00000, -0.63+0.005], baseOrientation=[0, 0, 0, 1.0], useFixedBase=1)
 
-		block_path = local_env_data_path + 'table/table_big.urdf'
+		block_path = local_env_data_path + 'models/table/table_big.urdf'
 		a = p.loadURDF(
 			block_path, basePosition=[0.9, 0.0, 0.], useFixedBase=True,
 			globalScaling=0.9)
-		textureId = p.loadTexture(local_env_data_path + 'table/textures/wood.jpeg')
+		textureId = p.loadTexture(local_env_data_path + 'models/table/textures/wood.jpeg')
 		p.changeVisualShape(a, -1, textureUniqueId=textureId)
 
 		# Load arm, no need to settle (joint angle set instantly)
