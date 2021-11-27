@@ -5,7 +5,7 @@ from src.utils_geom import *
 from src.utils_depth import *
 from src.panda import Panda
 
-local_env_data_path = os.getcwd() + '/envs/'
+local_env_data_path = os.getcwd() + '/../geometry/envs/'
 
 def accurateIK(bodyId, endEffectorId, targetPosition, targetOrientation, lowerLimits, upperLimits, jointRanges, restPoses, useNullSpace=False, maxIter=10, threshold=1e-4):
   """
