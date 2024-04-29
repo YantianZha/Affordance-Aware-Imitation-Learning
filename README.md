@@ -1,7 +1,7 @@
 # Contrastively Learning Visual Attention as Affordance Cues from Demonstrations for Robotic Grasping 
 
 
-[IROS Paper](https://drive.google.com/file/d/1NjTrwPTFbpvktXgQRivUFIH4GlB4Ksr3/view?usp=sharing) | [arXiv](https://arxiv.org/abs/2104.00878) | [Project Website](https://sites.google.com/asu.edu/affordance-aware-imitation/project) 
+[IROS Paper](https://drive.google.com/file/d/1NjTrwPTFbpvktXgQRivUFIH4GlB4Ksr3/view?usp=sharing) | [arXiv](https://arxiv.org/abs/2104.00878) | [Updated Slides](https://yantianzha.github.io/AAIL_Slides/) | [Project Website](https://sites.google.com/asu.edu/affordance-aware-imitation/project) 
 
 ![plot](./config/mug_exp1.png)
 
